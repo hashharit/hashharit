@@ -99,24 +99,21 @@ Most of my production work lives in private company repos — these are side pro
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=hashharit&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub stats" />
 <img height="165" src="https://streak-stats.demolab.com?user=hashharit&theme=github-dark-blue&hide_border=true" alt="Streak" />
 
-<a href="https://leetcode.com/windblaze"><img width="460" src="https://leetcard.jacoblin.cool/windblaze?theme=dark&font=Fira%20Code&ext=heatmap" alt="LeetCode stats" /></a>
+<a href="https://github.com/hashharit"><img width="92%" src="https://ghchart.rshah.org/39d353/hashharit" alt="Contribution heatmap" /></a>
 
 <img width="92%" src="https://github-readme-activity-graph.vercel.app/graph?username=hashharit&theme=github-compact&hide_border=true&area=true" alt="Activity graph" />
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hashharit/hashharit/output/github-snake.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hashharit/hashharit/output/github-snake-light.svg" />
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/hashharit/hashharit/output/github-snake-light.svg" />
-</picture>
-
 </div>
 
-## 🔗 Find me
+---
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-harit--mohan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/harit-mohan)
-[![LeetCode](https://img.shields.io/badge/LeetCode-windblaze-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/windblaze)
+**Reach me** &nbsp;·&nbsp;
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/harit-mohan)&nbsp;
+[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=flat-square&logo=leetcode&logoColor=black)](https://leetcode.com/windblaze)
+
+<sub>Bengaluru, IN · open to SDE-2 backend roles</sub>
 
 </div>
 

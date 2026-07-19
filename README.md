@@ -13,7 +13,6 @@ harit:
   role:      Backend Software Engineer          # SDE-1 @ HealthifyMe, ex-Amazon
   location:  Bengaluru, IN
   domain:    production LLM systems · health-tech platforms · high-scale sync
-  open_to:   SDE-2 backend roles
 ```
 
 Backend engineer who ships the boring-but-critical layer: the validation gates,
@@ -99,8 +98,6 @@ Most of my production work lives in private company repos — these are side pro
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=hashharit&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub stats" />
 <img height="165" src="https://streak-stats.demolab.com?user=hashharit&theme=github-dark-blue&hide_border=true" alt="Streak" />
 
-<a href="https://github.com/hashharit"><img width="92%" src="https://ghchart.rshah.org/39d353/hashharit" alt="Contribution heatmap" /></a>
-
 <img width="92%" src="https://github-readme-activity-graph.vercel.app/graph?username=hashharit&theme=github-compact&hide_border=true&area=true" alt="Activity graph" />
 
 </div>
@@ -113,7 +110,7 @@ Most of my production work lives in private company repos — these are side pro
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/harit-mohan)&nbsp;
 [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=flat-square&logo=leetcode&logoColor=black)](https://leetcode.com/windblaze)
 
-<sub>Bengaluru, IN · open to SDE-2 backend roles</sub>
+<sub>Bengaluru, IN</sub>
 
 </div>
 

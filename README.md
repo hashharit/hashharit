@@ -39,10 +39,36 @@ HealthifyMe; previously infrastructure tooling at Amazon.
   suites and staged rollouts, so nobody notices anything except the speedup
 - **Automation with guardrails** — replacing daily manual ops with pipelines that
   are deterministic first, LLM-assisted second, and never trusted blindly
-- **Infrastructure as code** — AWS CDK pipelines that standardize how teams ship
 
-Most of this lives in private company repos — happy to walk through the design of
-any of it.
+<details>
+<summary><b>🧵 Deep-dive: how do you make an LLM's answer <i>provably</i> correct?</b></summary>
+<br>
+
+You don't trust it — you rebuild it. The diet-plan system I designed runs every
+LLM response through three grounding layers before a user ever sees it:
+
+1. **Macro recomputation** — nutrition math is recomputed from source data, never
+   taken from the model's own arithmetic
+2. **Food-DB resolution** — every food item must resolve to a real database entry;
+   hallucinated foods die here
+3. **Algebraic serving solver** — serving sizes are solved as equations against
+   the target macros, so the final plan is numerically consistent by construction
+
+The LLM proposes; the pipeline disposes. ~900 plans/day run through this with no
+human in the loop.
+</details>
+
+<details>
+<summary><b>🧵 Deep-dive: shipping a rewrite with literally zero incidents</b></summary>
+<br>
+
+Moving LLM generation from Celery workers to an async FastAPI orchestrator, the
+scary part isn't the new code — it's proving the new path produces identical
+results. The rollout was gated by a golden-parity suite comparing old vs new
+output at 1e-9 tolerance, plus shadow-running the new path on real traffic before
+it served anyone. Then 5% → 25% → 60% → 100%, each stage watched. Zero incidents,
+~5s faster per request.
+</details>
 
 ## 🧠 How I use LLMs in production
 
@@ -53,14 +79,35 @@ if result is None:
     result = validate_or_reject(result)   # grounded, or it doesn't ship
 ```
 
-## 📈 GitHub stats
+## 📦 Things I've built in the open
+
+Most of my production work lives in private company repos — these are side projects:
+
+<div align="center">
+
+[![CP-Progress-Tracker](https://github-readme-stats.vercel.app/api/pin/?username=hashharit&repo=CP-Progress-Tracker&theme=github_dark&hide_border=true)](https://github.com/hashharit/CP-Progress-Tracker)
+[![Google-Scraper](https://github-readme-stats.vercel.app/api/pin/?username=hashharit&repo=Google-Scraper&theme=github_dark&hide_border=true)](https://github.com/hashharit/Google-Scraper)
+[![hide-text](https://github-readme-stats.vercel.app/api/pin/?username=hashharit&repo=hide-text&theme=github_dark&hide_border=true)](https://github.com/hashharit/hide-text)
+[![affiliate-link-batch](https://github-readme-stats.vercel.app/api/pin/?username=hashharit&repo=affiliate-link-batch&theme=github_dark&hide_border=true)](https://github.com/hashharit/affiliate-link-batch)
+
+</div>
+
+## 📈 Stats
 
 <div align="center">
 
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=hashharit&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub stats" />
 <img height="165" src="https://streak-stats.demolab.com?user=hashharit&theme=github-dark-blue&hide_border=true" alt="Streak" />
 
+<a href="https://leetcode.com/windblaze"><img width="460" src="https://leetcard.jacoblin.cool/windblaze?theme=dark&font=Fira%20Code&ext=heatmap" alt="LeetCode stats" /></a>
+
 <img width="92%" src="https://github-readme-activity-graph.vercel.app/graph?username=hashharit&theme=github-compact&hide_border=true&area=true" alt="Activity graph" />
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hashharit/hashharit/output/github-snake.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hashharit/hashharit/output/github-snake-light.svg" />
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/hashharit/hashharit/output/github-snake-light.svg" />
+</picture>
 
 </div>
 
